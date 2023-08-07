@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+background: #555;
+}
+
+*::-webkit-scrollbar-thumb {
+background-color: #222;
+border-radius: 20px;
+}
+
+.blue-gradient {
+    background: linear-gradient(45deg, #21FFF2, #00A3FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.purple-gradient {
+    background: linear-gradient(45deg, #FF52C4, #E649FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.orange-gradient {
+    background: linear-gradient(45deg, #FFB155, #FFF849);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.bg-orange-gradient {
+    background: linear-gradient(45deg, #FFB155, #FFF849);
+}
