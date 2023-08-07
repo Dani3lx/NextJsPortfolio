@@ -17,19 +17,19 @@ function ProjectSection() {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ delay: 0.15 }}>
-                    <h1 className='purple-gradient font-bold text-[40px] z-10 text-shadow-purple drop-shadow-purple'>Projects</h1>
+                    <h1 className='purple-gradient font-bold text-[40px] z-10 text-shadow-purple drop-shadow-purple lg:text-[60px]'>Projects</h1>
                     <div>
                         <h1 className='text-white font-semibold text-[30px] text-center pb-5'>My latest works</h1>
                         <div className='flex flex-col justify-center items-center'>
-                            <Project name='First Portfolio' img={FirstPortfolio} link='https://dani3lx.github.io/Portfolio/'/>
-                            <Project name='React Portfolio' img={ReactPortfolio} link='https://danielxu.netlify.app/'/>
-                            <Project name='Terminal Video Sharing System' img={Csc207} link='https://github.com/Dani3lx/Video-Entertainment-System/tree/master/phase2'/>
+                            <Project name='React Portfolio' img={ReactPortfolio} link='https://danielxu.netlify.app/' />
+                            <Project name='Terminal Video Sharing System' img={Csc207} link='https://github.com/Dani3lx/Video-Entertainment-System/tree/master/phase2' />
+                            <Project name='First Portfolio' img={FirstPortfolio} link='https://dani3lx.github.io/Portfolio/' />
 
                         </div>
                         <h1 className='text-white font-semibold text-[30px] text-center pt-20 pb-5'>My current works</h1>
                         <div className='flex flex-col justify-center items-center'>
-                            <Project name='UofT AWM' img={Awm} link='https://uoft-awm-web.vercel.app/'/>
-                            <Project name='PDF Editor' img={PdfEditor} link='https://pdf-editor-8hrp1yl4v-98zhaojeffrey.vercel.app/'/>
+                            <Project name='UofT AWM' img={Awm} link='https://uoft-awm-web.vercel.app/' />
+                            <Project name='PDF Editor' img={PdfEditor} link='https://pdf-editor-8hrp1yl4v-98zhaojeffrey.vercel.app/' />
                         </div>
 
                     </div>
