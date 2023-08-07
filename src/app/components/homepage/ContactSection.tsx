@@ -16,7 +16,7 @@ function ContactSection() {
                         <input type="text" name="name" placeholder='name' className="bg-transparent text-white border border-white p-5" />
                         <input type="email" name="email" placeholder='email' className="bg-transparent text-white border border-white p-5" />
                         <input type="text" name="subject" placeholder='subject' className="bg-transparent text-white border border-white p-5" />
-                        <textarea name="message" placeholder='message' id="" cols={0} rows={7} className="bg-transparent text-white border border-white p-5"></textarea>
+                        <textarea name="message" placeholder='message' id="" cols={0} rows={7} className="bg-transparent text-white border border-white p-5 resize-none"></textarea>
                         <button type="submit" className="text-white bg-orange-gradient rounded-full w-fit px-6 py-3 flex gap-1 hover:scale-105 active:scale-95 ease-in-out duration-75">
                             <h1>Send</h1>
                             <i className="uil uil-message button__icon"></i>
