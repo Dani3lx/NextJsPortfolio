@@ -12,7 +12,7 @@ function ContactSection() {
                     whileInView={{ opacity: 1 }}
                     transition={{ delay: 0.15 }}>
                     <h1 className='orange-gradient font-bold text-[40px] z-10 text-shadow-orange drop-shadow-orange lg:text-[60px]'>Contact Me</h1>
-                    <form action="https://getform.io/f/0efd2aaf-bc26-4464-bd39-ff1bbfbb48d0" method="POST" className="flex flex-col gap-5 w-1/2">
+                    <form action="https://getform.io/f/0efd2aaf-bc26-4464-bd39-ff1bbfbb48d0" method="POST" className="flex flex-col gap-5 md:w-1/2">
                         <input type="text" name="name" placeholder='name' className="bg-transparent text-white border border-white p-5" />
                         <input type="email" name="email" placeholder='email' className="bg-transparent text-white border border-white p-5" />
                         <input type="text" name="subject" placeholder='subject' className="bg-transparent text-white border border-white p-5" />
