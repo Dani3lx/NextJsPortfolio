@@ -34,12 +34,12 @@ function AboutSection() {
                         />
                         <div className='flex flex-col justify-center items-center h-fit gap-10 w-3/4 lg:w-1/3 md:gap-10 sm:px-10 sm:py-5 xl:px-20 xl:py-10 sm:bg-[#080808] border-[#a0a0a026] sm:border-[0.1px] rounded-3xl xl:ml-12'>
                             <div>
-                                <h1 className='text-white font-semibold text-[20px] md:text-[30px] text-left md:text-left'>I'm a student</h1>
+                                <h1 className='text-white font-semibold text-[20px] md:text-[30px] text-left md:text-left'>I&apos;m a student</h1>
                                 <h1 className='text-gray text-[15px] text-left'>Currently a third year undergraduate student studying at the <span className='font-bold'>University of Toronto</span>, pursuing the Computer Science Specialist program as well as a Math Minor.</h1>
                             </div>
 
                             <div>
-                                <h1 className='text-white font-semibold text-[20px] md:text-[30px] text-left md:text-left'>I'm a developer</h1>
+                                <h1 className='text-white font-semibold text-[20px] md:text-[30px] text-left md:text-left'>I&apos;m a developer</h1>
                                 <h1 className='text-gray text-[15px] text-left'>Passionate in designing and developing beautiful and responsive full stack web applications.</h1>
                             </div>
 
