@@ -29,9 +29,12 @@ const Project: React.FC<ProjectProps> = ({ img, name, link, description, techs }
                         <h2 className='text-white text-md sm:text-lg'>{name}</h2>
                         <p className='text-gray text-xs sm:text-sm'>{description}</p>
                         <div className='flex gap-2 flex-wrap mt-2'>
-                            {techs && techs.map(tech => (
-                                <p className='text-xs text-white rounded-full bg-light-gray px-3 py-1' key={name}>{tech}</p>
-                            ))}
+                            {techs &&
+                                techs.map((tech, index) => (
+                                    <p className='text-xs text-white bg-gray-600 rounded-full px-3 py-1' key={index}>
+                                        {tech}
+                                    </p>
+                                ))}
                         </div>
                     </div>
                 </div>
