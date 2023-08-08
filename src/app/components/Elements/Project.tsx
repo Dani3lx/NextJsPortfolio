@@ -1,5 +1,4 @@
 'use client'
-import React, { useState } from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from "framer-motion"
@@ -8,41 +7,34 @@ interface ProjectProps {
     img: any;
     name: string;
     link: string;
+    description: string;
+    techs: Array<string>;
 }
 
-const Project: React.FC<ProjectProps> = ({ img, name, link }) => {
-    const [active, setActive] = useState(false);
-
-    const handleMouseEnter = () => {
-        setActive(true);
-    };
-
-    const handleMouseLeave = () => {
-        setActive(false);
-    };
+const Project: React.FC<ProjectProps> = ({ img, name, link, description, techs }) => {
 
     return (
         <motion.div
-            className='md:max-w-[500px] pb-5 relative'
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+            className='md:max-w-[500px] pb-5 relative h-fit'
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.15, duration: 0.5 }}
         >
             <Link href={link} target='_blank'>
-                <Image src={img} alt={name} className='w-full rounded-xl' />
-                {active && (
-                    <motion.div
-                        className='absolute w-full bg-[rgba(0,0,0,0.7)]  items-center transform translate-y-[-100%] flex  rounded-b-xl'
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 1 }}
-                        transition={{ duration: 0.3 }}>
-                            <h1 className='text-white text-lg px-5 py-3'>{name}</h1>
-                    </motion.div>
-    )
-}
+                <Image src={img} alt={name} className='w-full rounded-xl  min-h-[300px] overflow-hidden object-cover' />
+
+                <div
+                    className='absolute w-full bg-gray-gradient items-center transform translate-y-[-100%] flex  rounded-b-xl'>
+                    <div className='px-5 py-3'>
+                        <h2 className='text-white text-md sm:text-lg'>{name}</h2>
+                        <p className='text-gray text-xs sm:text-sm'>{description}</p>
+                        <div className='flex gap-2 flex-wrap mt-2'>
+                            {techs && techs.map(tech => (
+                                <p className='text-xs text-white rounded-full bg-light-gray px-3 py-1'>{tech}</p>
+                            ))}
+                        </div>
+                    </div>
+                </div>
             </Link >
         </motion.div >
     );

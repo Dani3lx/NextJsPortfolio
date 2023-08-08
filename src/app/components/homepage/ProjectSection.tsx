@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from "framer-motion"
 
 import FirstPortfolio from '../../assets/images/projects/firstPortfolio.png'
@@ -10,29 +10,35 @@ import PdfEditor from '../../assets/images/projects/pdf-editor.png'
 import Project from '../Elements/Project'
 
 function ProjectSection() {
+    const [current, setCurrent] = useState(false);
     return (
         <>
             <div className='w-screen py-20 bg-[#080808] border-[#a0a0a026] border-[0.1px]' id='projects'>
-                <motion.div className='flex flex-col justify-center items-center w-full h-fit gap-20 px-5'
+                <motion.div className='flex flex-col justify-center items-center w-full h-fit gap-5 px-5'
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ delay: 0.15 }}>
-                    <h1 className='purple-gradient font-bold text-[40px] z-10 text-shadow-purple drop-shadow-purple lg:text-[60px]'>Projects</h1>
-                    <div>
-                        <h1 className='text-white font-semibold text-[30px] text-center pb-5'>My latest works</h1>
-                        <div className='flex flex-col justify-center items-center'>
-                            <Project name='React Portfolio' img={ReactPortfolio} link='https://danielxu.netlify.app/' />
-                            <Project name='Terminal Video Sharing System' img={Csc207} link='https://github.com/Dani3lx/Video-Entertainment-System/tree/master/phase2' />
-                            <Project name='First Portfolio' img={FirstPortfolio} link='https://dani3lx.github.io/Portfolio/' />
-
-                        </div>
-                        <h1 className='text-white font-semibold text-[30px] text-center pt-20 pb-5'>My current works</h1>
-                        <div className='flex flex-col justify-center items-center'>
-                            <Project name='UofT AWM' img={Awm} link='https://uoft-awm-web.vercel.app/' />
-                            <Project name='PDF Editor' img={PdfEditor} link='https://pdf-editor-8hrp1yl4v-98zhaojeffrey.vercel.app/' />
-                        </div>
-
+                    <h1 className='purple-gradient pb-7 font-bold text-[40px] z-10 text-shadow-purple drop-shadow-purple lg:text-[60px]'>Projects.</h1>
+                    <div className='flex gap-5 w-full md:justify-center'>
+                        <button
+                            className={`rounded-md px-2 py-1 sm:px-6 sm:py-3 ${!current ? "text-black bg-white" : 'text-white '}`}
+                            onClick={() => setCurrent(false)}>Completed</button>
+                        <button
+                            className={`rounded-md px-2 py-1 sm:px-6 sm:py-3  ${current ? "text-black bg-white" : 'text-white '}`}
+                            onClick={() => setCurrent(true)}>Ongoing</button>
                     </div>
+                    {!current && <div className='flex flex-col justify-center items-center'>
+                        <Project name='React Portfolio' img={ReactPortfolio} link='https://danielxu.netlify.app/' description='A portfolio website created using React.' techs={['React', 'Javascript', 'HTML', 'CSS']} />
+                        <Project name='Terminal Video Sharing System' img={Csc207} link='https://github.com/Dani3lx/Video-Entertainment-System/tree/master/phase2' description='An application that performs CRUD operations on video metadata through the terminal.' techs={['Java', 'Git']} />
+                        <Project name='First Portfolio' img={FirstPortfolio} link='https://dani3lx.github.io/Portfolio/' description='My first portfolio website created using vanilla HTML, CSS and Javascript.' techs={['HTML', 'CSS', 'Javascript']} />
+                    </div>}
+
+                    {current && <div className='flex flex-col justify-center items-center'>
+                        <Project name='UofT AWM' img={Awm} link='https://uoft-awm-web.vercel.app/' description='The official UofT AWM club website.' techs={['NextJs', 'Typescript', 'CSS & tailwindcss']} />
+                        <Project name='PDF Editor' img={PdfEditor} link='https://pdf-editor-8hrp1yl4v-98zhaojeffrey.vercel.app/' description='A PDF editor with user dashboard and cloud storage.' techs={['NextJs', 'Prisma', 'MongoDB', 'Typescript', 'CSS & tailwindcss']} />
+                    </div>}
+
+
                 </motion.div>
             </div>
         </>

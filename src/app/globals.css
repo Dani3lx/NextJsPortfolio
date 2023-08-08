@@ -48,3 +48,7 @@ border-radius: 20px;
 .bg-orange-gradient {
     background: linear-gradient(45deg, #ffb055ba, #fff949b6);
 }
+
+.bg-gray-gradient {
+    background: linear-gradient(to top,#000000d7 40%, #000000b9);
+}
