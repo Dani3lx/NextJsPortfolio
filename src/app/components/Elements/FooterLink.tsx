@@ -13,7 +13,7 @@ const FooterLink: React.FC<FooterLinkProps> = ({ icon, name, link }) => {
         <>
             <Tooltip id="tooltip" place='bottom' variant='light' />
             <Link href={link} target='_blank'>
-                <i className={`uil uil-${icon} text-gray text-2xl hover:text-white duration-100`} data-tooltip-id="tooltip"
+                <i className={`uil uil-${icon} dark:text-gray text-2xl hover:text-gray dark:hover:text-white duration-100`} data-tooltip-id="tooltip"
                     data-tooltip-content={name}>
                 </i>
             </Link>

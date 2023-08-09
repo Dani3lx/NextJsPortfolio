@@ -1,22 +1,19 @@
 import React from 'react';
-import Image from 'next/image';
 import { Tooltip } from 'react-tooltip'
 
 interface SkillIconProps {
-    icon: any;
+    icon: React.ReactNode;
     name: string;
 }
 
 const SkillIcon: React.FC<SkillIconProps> = ({ icon, name }) => {
     return (
         <>
-            <Tooltip id="tooltip" place='bottom' variant='light'/>
-            <Image
-                src={icon}
-                alt={name}
-                data-tooltip-id="tooltip" 
-                data-tooltip-content={name}
-            />
+            <Tooltip id="tooltip" place='bottom' variant='light' />
+            <div className='text-black dark:text-white' data-tooltip-id="tooltip"
+                data-tooltip-content={name}>
+                {icon}
+            </div>
         </>
     );
 };

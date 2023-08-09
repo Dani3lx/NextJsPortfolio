@@ -6,9 +6,14 @@
     scroll-behavior: smooth;
 }
 
-body{
-    background-color: black;
+
+.dark .dark\:bg-grid {
     background-image: linear-gradient(rgba(20, 20, 20, .7), transparent .1em), linear-gradient(90deg, rgba(20, 20, 20, .7), transparent .1em);
+    background-size: 6em 6em;
+}
+
+.bg-grid-light {
+    background-image: linear-gradient(rgba(215, 215, 215, 0.7), transparent .1em), linear-gradient(90deg, rgba(215, 215, 215, 0.7), transparent .1em);
     background-size: 6em 6em;
 }
 
@@ -26,28 +31,28 @@ background-color: #222;
 border-radius: 20px;
 }
 
-.blue-gradient {
+.dark .dark\:blue-gradient {
     background: linear-gradient(45deg, #21FFF2, #00A3FF);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
 
-.purple-gradient {
+.dark .dark\:purple-gradient {
     background: linear-gradient(45deg, #FF52C4, #E649FF);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
 
-.orange-gradient {
+.dark .dark\:orange-gradient {
     background: linear-gradient(45deg, #FFB155, #FFF849);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
 
-.bg-orange-gradient {
+.dark .dark\:bg-orange-gradient {
     background: linear-gradient(45deg, #ffb055ba, #fff949b6);
 }
 

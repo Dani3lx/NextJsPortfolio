@@ -9,7 +9,7 @@ import ContactSection from '../components/homepage/ContactSection'
 function page() {
   return (
     <PageWrapper>
-      <div>
+      <div className='bg-[#f7f7f7] dark:bg-[#0c0c0c] bg-grid-light dark:bg-grid duration-150 ease-in'>
         <HeroSection />
         <AboutSection />
         <ProjectSection />

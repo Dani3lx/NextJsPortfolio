@@ -12,19 +12,19 @@ import Project from '../Elements/Project'
 function ProjectSection() {
     const [current, setCurrent] = useState(false);
     return (
-        <>
-            <div className='w-screen py-20 bg-[#080808c7] border-[#a0a0a026] border-[0.1px]' id='projects'>
+        <>  
+            <div className='w-screen py-20 bg-[#f2f2f2ee] dark:bg-[#080808c7] dark:border-[#a0a0a026] border-[0.1px]' id='projects'>
                 <motion.div className='flex flex-col justify-center items-center w-full h-fit gap-5 px-5'
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ delay: 0.15 }}>
-                    <h1 className='purple-gradient pb-7 font-bold text-[40px] z-10 text-shadow-purple drop-shadow-purple lg:text-[60px]'>Projects.</h1>
+                    <h1 className='dark:purple-gradient pb-7 font-bold text-[40px] z-10 text-shadow-purple drop-shadow-purple lg:text-[60px]'>Projects.</h1>
                     <div className='flex w-full md:justify-center'>
                         <button
-                            className={`ease-in duration-200 rounded-md px-2 py-1 sm:px-6 sm:py-3 ${!current ? "text-black bg-white" : 'text-white '}`}
+                            className={`ease-in duration-200 rounded-md px-2 py-1 sm:px-6 sm:py-3 ${!current ? "text-white dark:text-black bg-black dark:bg-white" : 'dark:text-white '}`}
                             onClick={() => setCurrent(false)}>Completed</button>
                         <button
-                            className={`ease-in duration-200 rounded-md px-2 py-1 sm:px-6 sm:py-3  ${current ? "text-black bg-white" : 'text-white '}`}
+                            className={`ease-in duration-200 rounded-md px-2 py-1 sm:px-6 sm:py-3  ${current ? "text-white dark:text-black bg-black dark:bg-white" : 'dark:text-white '}`}
                             onClick={() => setCurrent(true)}>Ongoing</button>
                     </div>
                     {!current && <div className='flex flex-col justify-center items-center'>
