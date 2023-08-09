@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 function ContactSection() {
     return (
         <>
-            <div className='w-screen py-20 bg-[#080808] border-[#a0a0a026] border-[0.1px]' id='contacts'>
+            <div className='w-screen py-20 bg-[#0808086e] border-[#a0a0a026] border-[0.1px]' id='contacts'>
                 <motion.div className='flex flex-col justify-center items-center w-full h-fit gap-20 px-5'
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}

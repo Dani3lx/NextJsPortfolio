@@ -8,6 +8,8 @@
 
 body{
     background-color: black;
+    background-image: linear-gradient(rgba(20, 20, 20, .7), transparent .1em), linear-gradient(90deg, rgba(20, 20, 20, .7), transparent .1em);
+    background-size: 6em 6em;
 }
 
 /* Works on Chrome, Edge, and Safari */

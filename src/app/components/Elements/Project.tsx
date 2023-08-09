@@ -21,7 +21,7 @@ const Project: React.FC<ProjectProps> = ({ img, name, link, description, techs }
             transition={{ delay: 0.15, duration: 0.5 }}
         >
             <Link href={link} target='_blank'>
-                <Image src={img} alt={name} className='w-full rounded-xl  min-h-[300px] overflow-hidden object-cover' />
+                <Image src={img} alt={name} className='w-full rounded-xl  min-h-[300px] overflow-hidden object-cover hover:opacity-80' />
 
                 <div
                     className='absolute w-full bg-gray-gradient items-center transform translate-y-[-100%] flex  rounded-b-xl'>
@@ -31,7 +31,7 @@ const Project: React.FC<ProjectProps> = ({ img, name, link, description, techs }
                         <div className='flex gap-2 flex-wrap mt-2'>
                             {techs &&
                                 techs.map((tech, index) => (
-                                    <p className='text-xs text-white bg-gray-600 rounded-full px-3 py-1' key={index}>
+                                    <p className='text-xs text-white rounded-full bg-light-gray px-3 py-1' key={index}>
                                         {tech}
                                     </p>
                                 ))}
