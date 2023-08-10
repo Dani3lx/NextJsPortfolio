@@ -35,19 +35,19 @@ function AboutSection() {
                         <div className='flex flex-col justify-center items-center h-fit gap-10 w-3/4 lg:w-1/3 md:gap-10 sm:px-10 sm:py-5 xl:px-20 xl:py-10 dark:sm:bg-[#080808] sm:bg-[#eaeaea] border-[#a0a0a026] sm:border-[0.1px] rounded-3xl xl:ml-12'>
                             <div>
                                 <h1 className='dark:text-white font-semibold text-[20px] md:text-[30px] text-left md:text-left'>I&apos;m a student,</h1>
-                                <h1 className='dark:text-gray text-[15px] text-left'>Currently a third year undergraduate student studying at the <span className='font-bold'>University of Toronto</span>, pursuing the Computer Science Specialist program as well as a Math Minor.</h1>
+                                <h1 className='dark:text-gray text-[15px] text-left'>Currently a third-year undergraduate student enrolled at the University of Toronto, working towards completing the Computer Science Specialist program alongside a minor in Mathematics.</h1>
                             </div>
 
                             <div>
                                 <h1 className='dark:text-white font-semibold text-[20px] md:text-[30px] text-left md:text-left'>I&apos;m a developer,</h1>
-                                <h1 className='dark:text-gray text-[15px] text-left'>Passionate in designing and developing beautiful and responsive full stack web applications.</h1>
+                                <h1 className='dark:text-gray text-[15px] text-left'>Enthusiastic about crafting and building visually appealing and responsive full stack web applications.</h1>
                             </div>
 
                             <div>
                                 <h1 className='dark:text-white font-semibold text-[20px] md:text-[30px] text-left md:text-left'>Fun Facts:</h1>
-                                <h1 className='dark:text-gray text-[15px] text-left'>I play the piano and have reached level 10 RCM.</h1>
+                                <h1 className='dark:text-gray text-[15px] text-left'>- I am proficient in playing the piano and have achieved a level 10 ranking in the RCM (Royal Conservatory of Music) program.</h1>
                                 <h1 className='dark:text-gray text-[15px] text-left'>
-                                    I play video games competitively and competes in collegiate Overwatch tournaments.</h1>
+                                - I am actively engaged in competitive video gaming and participate in collegiate Overwatch tournaments.</h1>
                             </div>
                         </div>
                     </div>

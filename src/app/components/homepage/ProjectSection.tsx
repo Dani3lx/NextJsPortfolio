@@ -13,7 +13,7 @@ function ProjectSection() {
     const [current, setCurrent] = useState(false);
     return (
         <>  
-            <div className='w-screen py-20 bg-[#f2f2f2ee] dark:bg-[#080808c7] dark:border-[#a0a0a026] border-[0.1px]' id='projects'>
+            <div className='w-screen py-20 bg-[#f2f2f2ee] dark:bg-[#080808c7] border-[#fff] dark:border-[#a0a0a026] border-[0.1px]' id='projects'>
                 <motion.div className='flex flex-col justify-center items-center w-full h-fit gap-5 px-5'
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
