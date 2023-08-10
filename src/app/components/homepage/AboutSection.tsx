@@ -14,24 +14,19 @@ import JavaIcon from '../../assets/images/icons/Java'
 import PythonIcon from '../../assets/images/icons/Python'
 
 
-import Image from 'next/image'
 import { motion } from "framer-motion"
 import SkillIcon from '../Elements/SkillIcon'
 
 function AboutSection() {
     return (
         <>
-            <div className='w-screen py-20' id='about'>
+            <div className='w-screen py-24 bg-[#eeeeee5d] dark:bg-[#1212125d]' id='about'>
                 <motion.div className='flex flex-col justify-center items-center w-full h-fit gap-12 px-5'
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ delay: 0.15 }}>
                     <h1 className='dark:blue-gradient font-bold text-[40px] lg:text-[60px] z-10 text-shadow-blue drop-shadow-blue'>About Me.</h1>
                     <div className='flex flex-col md:flex-row justify-center items-center w-full h-fit gap-10'>
-                        <Image
-                            className='hidden lg:block z-0 min-w-[300px] max-w-[500px] w-1/2 md:w-1/2 md:max-w-[600px]'
-                            src={Programmer} alt='Backdrop'
-                        />
                         <div className='flex flex-col justify-center items-center h-fit gap-10 w-3/4 lg:w-1/3 md:gap-10 sm:px-10 sm:py-5 xl:px-20 xl:py-10 dark:sm:bg-[#080808] sm:bg-[#eaeaea] border-[#a0a0a026] sm:border-[0.1px] rounded-3xl xl:ml-12'>
                             <div>
                                 <h1 className='dark:text-white font-semibold text-[20px] md:text-[30px] text-left md:text-left'>I&apos;m a student,</h1>

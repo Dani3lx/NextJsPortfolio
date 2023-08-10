@@ -8,11 +8,12 @@ import Csc207 from '../../assets/images/projects/csc207.png'
 import Awm from '../../assets/images/projects/awm.png'
 import PdfEditor from '../../assets/images/projects/pdf-editor.png'
 import Project from '../Elements/Project'
+import Link from 'next/link'
 
 function ProjectSection() {
     const [current, setCurrent] = useState(false);
     return (
-        <>  
+        <>
             <div className='w-screen py-20 bg-[#f2f2f2ee] dark:bg-[#080808c7] border-[#fff] dark:border-[#a0a0a026] border-[0.1px]' id='projects'>
                 <motion.div className='flex flex-col justify-center items-center w-full h-fit gap-5 px-5'
                     initial={{ opacity: 0 }}
@@ -37,7 +38,7 @@ function ProjectSection() {
                         <Project name='UofT AWM' img={Awm} link='https://uoft-awm-web.vercel.app/' description='The official UofT AWM club website.' techs={['NextJs', 'Typescript', 'CSS & tailwindcss']} />
                         <Project name='PDF Editor' img={PdfEditor} link='https://pdf-editor-8hrp1yl4v-98zhaojeffrey.vercel.app/' description='A PDF editor with user dashboard and cloud storage.' techs={['NextJs', 'Prisma', 'MongoDB', 'Typescript', 'CSS & tailwindcss']} />
                     </div>}
-
+                    <Link href={'https://drive.google.com/drive/folders/14pI22r4kC1jvOIVZ-58v5-0abjFPT2N5?usp=sharing'} target='_blank' className='dark:text-white hover:scale-105 active:scale-95'>Check out my resume <i className="uil uil-arrow-right"></i></Link>
 
                 </motion.div>
             </div>
