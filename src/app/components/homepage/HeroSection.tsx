@@ -4,10 +4,15 @@ import Backdrop2 from '../../assets/images/home/background-blob2.svg'
 import Arrow from '../../assets/images/home/arrow-circle-down.svg'
 import Image from 'next/image'
 import { motion } from "framer-motion"
+import Spline from '@splinetool/react-spline';
+
 
 function HeroSection() {
     return (
         <>
+            <div className='absolute w-screen h-screen md:scale-125 lg:scale-150'>
+                <Spline scene="https://prod.spline.design/s2Dphz1sIef82wJt/scene.splinecode" />
+            </div>
             <div className='w-screen h-screen relative' id='home'>
                 <motion.div className='absolute flex flex-col justify-center items-center w-full h-full '
                     initial={{ opacity: 0 }}
