@@ -10,7 +10,7 @@ import Spline from '@splinetool/react-spline';
 function HeroSection() {
     return (
         <>
-            <div className='absolute w-screen h-screen md:scale-125 lg:scale-150'>
+            <div className='absolute w-screen h-screen md:scale-125 lg:scale-150 dark:opacity-80'>
                 <Spline scene="https://prod.spline.design/s2Dphz1sIef82wJt/scene.splinecode" />
             </div>
             <div className='w-screen h-screen relative' id='home'>
