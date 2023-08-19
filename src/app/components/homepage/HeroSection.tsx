@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-import Backdrop2 from '../../assets/images/home/background-blob2.svg'
 import Arrow from '../../assets/images/home/arrow-circle-down.svg'
 import Image from 'next/image'
 import { motion } from "framer-motion"

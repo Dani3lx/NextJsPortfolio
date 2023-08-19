@@ -19,7 +19,7 @@ const ChangeTheme = () => {
 }
 
 function Navbar() {
-  const [dark, setDark] = useState<boolean>(true);
+  const [dark, setDark] = useState<boolean>(false);
   const [isActive, setIsActive] = useState(false);
   const handleClick = () => {
     setIsActive(prev => !prev);
