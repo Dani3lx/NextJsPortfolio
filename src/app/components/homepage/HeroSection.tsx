@@ -23,10 +23,6 @@ function HeroSection() {
                         <h1 className='dark:text-white font-extrabold text-[70px] lg:text-[90px] -mb-[30px]'>I am</h1>
                         <h1 className='dark:text-white font-extrabold text-[70px] lg:text-[90px]'>Daniel.</h1>
                     </div>
-                    <Image
-                        className='absolute z-0 lg:w-1/3 opacity-70 w-full animate-pulse'
-                        src={Backdrop2} alt='Backdrop'
-                    />
                     <a href='#about' className='absolute z-10 bottom-10 animate-bounce'>
                         <Image
                             src={Arrow} alt='Down Arrow' className='hover:scale-105 active:scale-95'

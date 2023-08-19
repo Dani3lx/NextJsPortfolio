@@ -52,26 +52,26 @@ function AboutSection() {
                                     </div>
                                 </div>
                             </div>
-                            <div className='flex flex-col justify-center items-center gap-5 w-full'>
-                                <h1 className='dark:text-gray text-[20px] text-center'>Tools that I use:</h1>
-                                <div className='flex gap-3 flex-wrap w-2/3 justify-center items-center'>
-                                    <SkillIcon icon={<HTML5Icon />} name='HTML5' />
-                                    <SkillIcon icon={<CSSIcon />} name='CSS' />
-                                    <SkillIcon icon={<JavascriptIcon />} name='Javascript' />
-                                    <SkillIcon icon={<ReactIcon />} name='React' />
-                                    <SkillIcon icon={<NextJSIcon />} name='NextJS' />
-                                    <SkillIcon icon={<MongodbIcon />} name='Mongodb' />
-                                    <SkillIcon icon={<PostgreSQLIcon />} name='PostgreSQL' />
-                                    <SkillIcon icon={<GitIcon />} name='Git' />
-                                    <SkillIcon icon={<JavaIcon />} name='Java' />
-                                    <SkillIcon icon={<CIcon />} name='C' />
-                                    <SkillIcon icon={<PythonIcon />} name='Python' />
-                                </div>
-                            </div>
+
                         </div>
 
                     </div>
-
+                    <div className='flex flex-col justify-center items-center gap-5 w-full'>
+                        <h1 className='dark:text-gray text-[20px] text-center'>Tools that I use:</h1>
+                        <div className='flex gap-3 flex-wrap w-2/3 justify-center items-center'>
+                            <SkillIcon icon={<HTML5Icon />} name='HTML5' />
+                            <SkillIcon icon={<CSSIcon />} name='CSS' />
+                            <SkillIcon icon={<JavascriptIcon />} name='Javascript' />
+                            <SkillIcon icon={<ReactIcon />} name='React' />
+                            <SkillIcon icon={<NextJSIcon />} name='NextJS' />
+                            <SkillIcon icon={<MongodbIcon />} name='Mongodb' />
+                            <SkillIcon icon={<PostgreSQLIcon />} name='PostgreSQL' />
+                            <SkillIcon icon={<GitIcon />} name='Git' />
+                            <SkillIcon icon={<JavaIcon />} name='Java' />
+                            <SkillIcon icon={<CIcon />} name='C' />
+                            <SkillIcon icon={<PythonIcon />} name='Python' />
+                        </div>
+                    </div>
                 </motion.div>
             </div>
         </>
