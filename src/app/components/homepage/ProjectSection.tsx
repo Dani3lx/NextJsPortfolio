@@ -1,6 +1,5 @@
 'use client'
 import React, { useState } from 'react'
-import { motion } from "framer-motion"
 
 import FirstPortfolio from '../../assets/images/projects/firstPortfolio.png'
 import ReactPortfolio from '../../assets/images/projects/reactPortfolio.png'
@@ -17,10 +16,7 @@ function ProjectSection() {
     return (
         <>
             <div className='w-screen py-20 bg-[#f2f2f2ee] dark:bg-[#080808c7] border-[#fff] dark:border-[#a0a0a026] border-[0.1px]' id='projects'>
-                <motion.div className='flex flex-col justify-center items-center w-full h-fit gap-5 px-5'
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ delay: 0.15 }}>
+                <div className='flex flex-col justify-center items-center w-full h-fit gap-5 px-5'>
                     <h1 className='dark:purple-gradient pb-7 font-bold text-[40px] z-10 text-shadow-purple drop-shadow-purple lg:text-[60px]'>Projects.</h1>
                     <div className='flex w-full md:justify-center'>
                         <button
@@ -43,7 +39,7 @@ function ProjectSection() {
                     </div>}
                     <Link href={'https://drive.google.com/drive/folders/14pI22r4kC1jvOIVZ-58v5-0abjFPT2N5?usp=sharing'} target='_blank' className='dark:text-white hover:scale-105 active:scale-95'>Check out my resume <i className="uil uil-arrow-right"></i></Link>
 
-                </motion.div>
+                </div>
             </div>
         </>
     )

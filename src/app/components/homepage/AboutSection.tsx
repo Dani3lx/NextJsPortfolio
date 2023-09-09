@@ -14,18 +14,13 @@ import GitIcon from '../../assets/images/icons/Git'
 import JavaIcon from '../../assets/images/icons/Java'
 import PythonIcon from '../../assets/images/icons/Python'
 
-
-import { motion } from "framer-motion"
 import SkillIcon from '../Elements/SkillIcon'
 
 function AboutSection() {
     return (
         <>
             <div className='w-screen py-24 bg-[#eeeeee5d] dark:bg-[#1212125d]' id='about'>
-                <motion.div className='flex flex-col justify-center items-center w-full h-fit gap-16 px-5'
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ delay: 0.15 }}>
+                <div className='flex flex-col justify-center items-center w-full h-fit gap-16 px-5'>
                     <h1 className='dark:blue-gradient font-bold text-[40px] lg:text-[60px] z-10 text-shadow-blue drop-shadow-blue'>About Me.</h1>
                     <div className='flex w-full max-lg:flex-col'>
                         <div className='z-10 lg:w-1/2 max-w-[800px] max-h-[600px] lg:-mt-16 max-lg:hidden max-xl:scale-75 max-xl:-ml-24'>
@@ -72,7 +67,7 @@ function AboutSection() {
                             <SkillIcon icon={<PythonIcon />} name='Python' />
                         </div>
                     </div>
-                </motion.div>
+                </div>
             </div>
         </>
     )
