@@ -34,7 +34,8 @@ function Navbar() {
     <>
       <AnimatePresence>
         <div className='fixed w-screen z-50'>
-          <div className={`w-screen bg-[rgba(243,243,243,0.91)] dark:bg-[rgba(0,0,0,0.9)] h-13 px-5 md:px-14 flex justify-between items-center ${isActive ? '' : 'border-b'} border-b-light-gray`} >
+          <div className={`w-screen bg-[rgba(243,243,243,0.91)] dark:bg-[rgba(0,0,0,0.9)] h-13 px-5 md:px-24 lg:px-32 flex justify-between items-center ${isActive ? '' : 'border-b'} border-b-light-gray`} >
+
             {!isActive &&
               <button className='md:hidden' onClick={handleClick}><Image src={Bar} alt='bars' /></button>
             }
@@ -42,15 +43,21 @@ function Navbar() {
             {isActive &&
               <button className='md:hidden' onClick={handleClick}><Image src={Cross} alt='cross' /></button>
             }
-            <Link href='/' onClick={() => setIsActive(false)}>
+
+            <Link href='/' onClick={() => setIsActive(false)} className='md:hidden'>
               <Logo />
             </Link>
-            <div className="hidden md:flex justify-between w-5/12 lg:gap-20 xl:gap-24 lg:w-fit">
+
+            <div className="hidden md:flex justify-between w-5/12 gap-10 lg:gap-20 xl:gap-24 lg:w-fit">
+              <Link href='/' onClick={() => setIsActive(false)}>
+                <Logo />
+              </Link>
               <Navlink target='Home' />
               <Navlink target='About' />
               <Navlink target='Projects' />
               <Navlink target='Contacts' />
             </div>
+
             <button onClick={() => {
               setDark(prev => !prev)
             }}>{dark ? <i className="uil uil-sun text-white text-lg"></i> : <i className="uil uil-moon text-lg text-black"></i>}</button>
