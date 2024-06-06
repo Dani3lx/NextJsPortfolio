@@ -14,10 +14,10 @@ const Project: React.FC<ProjectProps> = ({ img, name, link, description, techs }
 
     return (
         <div
-            className='md:max-w-[500px] pb-5 relative h-fit w-full'
+            className='md:max-w-[500px] pb-5 relative h-fit w-full duration-200 hover:scale-105 group'
         >
             <Link href={link} target='_blank'>
-                <Image src={img} alt={name} loading='lazy' className='w-full rounded-xl  min-h-[300px] overflow-hidden object-cover hover:opacity-80' />
+                <Image src={img} alt={name} loading='lazy' className='w-full rounded-xl  min-h-[300px] overflow-hidden object-cover group-hover:opacity-50 duration-200' />
 
                 <div
                     className='absolute w-full bg-gray-gradient items-center transform translate-y-[-100%] flex  rounded-b-xl'>
